@@ -74,6 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   ];
 
+  bool _showChart = true;
+
   List<Transaction> get _recentTransactions {
     return _transactions.where((transaction) {
       final DateTime _sevenDaysAgo = DateTime.now().subtract(Duration(days: 7));
