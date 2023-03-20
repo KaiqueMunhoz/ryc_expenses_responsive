@@ -128,8 +128,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Chart(_recentTransactions),
-            TransactionList(_transactions, _removeTransaction),
+            Container(
+              child: Chart(_recentTransactions),
+            ),
+            Container(
+              child: TransactionList(_transactions, _removeTransaction),
+            ),
           ],
         ),
       ),
