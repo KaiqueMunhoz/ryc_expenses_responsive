@@ -140,8 +140,12 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Text('Exibir Gráfico'),
                 Switch(
-                  value: true,
-                  onChanged: (_) {},
+                  value: _showChart,
+                  onChanged: (value) {
+                    setState(() {
+                      _showChart = value;
+                    });
+                  },
                 ),
               ],
             ),
