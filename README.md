@@ -1,4 +1,4 @@
-# ryc_expenses
+# ryc_expenses_responsive
 
 A new Flutter project.
 
