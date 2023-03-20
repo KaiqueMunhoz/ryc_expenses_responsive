@@ -136,6 +136,10 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Exibir Gráfico'),
+                Switch(
+                  value: true,
+                  onChanged: (_) {},
+                ),
               ],
             ),
             Container(
