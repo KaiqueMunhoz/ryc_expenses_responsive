@@ -20,7 +20,7 @@ class TransactionList extends StatelessWidget {
           ? LayoutBuilder(builder: (_, constraints) {
               return Column(
                 children: [
-                  SizedBox(height: constraints.maxHeight * 0.05),
+                  SizedBox(height: constraints.maxHeight * 0.01),
                   Container(
                     height: constraints.maxHeight * 0.2,
                     child: Text(
@@ -28,7 +28,7 @@ class TransactionList extends StatelessWidget {
                       style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
-                  SizedBox(height: constraints.maxHeight * 0.05),
+                  SizedBox(height: constraints.maxHeight * 0.01),
                   Container(
                     height: constraints.maxHeight * 0.7,
                     child: Image.asset(
