@@ -22,7 +22,7 @@ class TransactionList extends StatelessWidget {
                 children: [
                   SizedBox(height: constraints.maxHeight * 0.05),
                   Container(
-                    height: constraints.maxHeight * 0.3,
+                    height: constraints.maxHeight * 0.2,
                     child: Text(
                       'Nenhuma Transação Cadastrada',
                       style: Theme.of(context).textTheme.headline6,
@@ -30,7 +30,7 @@ class TransactionList extends StatelessWidget {
                   ),
                   SizedBox(height: constraints.maxHeight * 0.05),
                   Container(
-                    height: constraints.maxHeight * 0.6,
+                    height: constraints.maxHeight * 0.7,
                     child: Image.asset(
                       'assets/images/waiting.png',
                       fit: BoxFit.cover,
