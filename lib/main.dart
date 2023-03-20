@@ -149,14 +149,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            Container(
-              height: _availableHeight * 0.30,
-              child: Chart(_recentTransactions),
-            ),
-            Container(
-              height: _availableHeight * 0.70,
-              child: TransactionList(_transactions, _removeTransaction),
-            ),
+            if (_showChart)
+              Container(
+                height: _availableHeight * 0.30,
+                child: Chart(_recentTransactions),
+              ),
+            if (!_showChart)
+              Container(
+                height: _availableHeight * 0.70,
+                child: TransactionList(_transactions, _removeTransaction),
+              ),
           ],
         ),
       ),
