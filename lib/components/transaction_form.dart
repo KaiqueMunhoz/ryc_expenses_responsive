@@ -58,6 +58,7 @@ class _TransactionFormState extends State<TransactionForm> {
             left: 10.0,
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 controller: _titleController,
