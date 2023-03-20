@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ],
     );
-
+    final double _appBarHeight = appBar.preferredSize.height;
     final double availableHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
