@@ -124,7 +124,8 @@ class _MyHomePageState extends State<MyHomePage> {
     final double _appBarHeight = appBar.preferredSize.height;
     final double _statusBarHeight = MediaQuery.of(context).padding.top;
     final double _screenTotalHeight = MediaQuery.of(context).size.height;
-    final double _availableHeight = MediaQuery.of(context).size.height;
+    final double _availableHeight =
+        _screenTotalHeight - _statusBarHeight - _appBarHeight;
 
     return Scaffold(
       appBar: appBar,
