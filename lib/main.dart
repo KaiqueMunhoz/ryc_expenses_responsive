@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     final double _appBarHeight = appBar.preferredSize.height;
     final double _statusBarHeight = MediaQuery.of(context).padding.top;
-    final double availableHeight = MediaQuery.of(context).size.height;
+    final double _availableHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: appBar,
@@ -132,11 +132,11 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              height: availableHeight * 0.4,
+              height: _availableHeight * 0.4,
               child: Chart(_recentTransactions),
             ),
             Container(
-              height: availableHeight * 0.6,
+              height: _availableHeight * 0.6,
               child: TransactionList(_transactions, _removeTransaction),
             ),
           ],
