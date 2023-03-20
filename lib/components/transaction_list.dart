@@ -36,6 +36,7 @@ class TransactionList extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
+                  SizedBox(height: constraints.maxHeight * 0.01),
                 ],
               );
             })
