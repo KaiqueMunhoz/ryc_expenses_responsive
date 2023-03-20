@@ -131,6 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: appBar,
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
