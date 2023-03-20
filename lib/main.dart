@@ -121,6 +121,14 @@ class _MyHomePageState extends State<MyHomePage> {
       title: Text('Despesas Pessoais'),
       actions: [
         IconButton(
+          icon: Icon(Icons.list),
+          onPressed: () {
+            setState(() {
+              _showChart = !_showChart;
+            });
+          },
+        ),
+        IconButton(
           icon: Icon(Icons.add),
           onPressed: () => _openTransactionFormModal(context),
         ),
