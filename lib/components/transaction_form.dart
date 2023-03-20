@@ -51,7 +51,12 @@ class _TransactionFormState extends State<TransactionForm> {
       child: Card(
         elevation: 5,
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: EdgeInsets.only(
+            top: 10.0,
+            right: 10.0,
+            bottom: 10.0 + MediaQuery.of(context).viewInsets.bottom,
+            left: 10.0,
+          ),
           child: Column(
             children: [
               TextField(
