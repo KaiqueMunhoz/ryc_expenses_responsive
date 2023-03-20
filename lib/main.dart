@@ -155,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             if (_showChart || !_isLandscape)
               Container(
-                height: _availableHeight * 0.30,
+                height: _availableHeight * (_isLandscape ? 0.7 : 0.3),
                 child: Chart(_recentTransactions),
               ),
             if (!_showChart || !_isLandscape)
