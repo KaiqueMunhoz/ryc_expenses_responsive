@@ -4,16 +4,34 @@ import 'package:intl/intl.dart';
 class TransactionForm extends StatefulWidget {
   final void Function(String, double, DateTime) onSubmit;
 
-  TransactionForm(
-    this.onSubmit, {
-    Key key,
-  }) : super(key: key);
+  TransactionForm(this.onSubmit) {
+    print("Ciclo de Vida Widget: Constructor TransactionForm");
+  }
 
   @override
-  _TransactionFormState createState() => _TransactionFormState();
+  _TransactionFormState createState() {
+    print("Ciclo de Vida Widget: createState TransactionForm");
+    return _TransactionFormState();
+  }
 }
 
 class _TransactionFormState extends State<TransactionForm> {
+  _TransactionFormState() {
+    print("Ciclo de Vida Widget: Constructor _TransactionFormState");
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    print("Ciclo de Vida Widget: initState _TransactionFormState");
+  }
+
+  @override
+  void didUpdateWidget(TransactionForm oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    print("Ciclo de Vida Widget: didUpdateWidget _TransactionFormState");
+  }
+
   final _titleController = TextEditingController();
   final _valueController = TextEditingController();
   DateTime _selectedDate = DateTime.now();
